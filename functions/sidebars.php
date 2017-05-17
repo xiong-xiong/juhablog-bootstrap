@@ -1,5 +1,9 @@
 <?php
 
+//Add theme support to widget editing buttons (defaut widgets)
+add_theme_support('customize-selective-refresh-widgets' );
+
+
 /*
  * REGISTER SIDEBARS/WIDGET AREAS
  *

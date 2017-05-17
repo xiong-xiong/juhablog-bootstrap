@@ -3,12 +3,12 @@
             }
             ?>
 
-            <?php if ( in_category('javascript') ) {
+            <?php if ( in_category('js') ) {
             echo "<i class='fa fa-code cat-icon' title='JavaScript dev'></i> ";
             }
             ?>
-            <?php if ( in_category('games') ) {
-            echo "<i class='fa fa-gamepad cat-icon' title='Game dev'></i> ";
+            <?php if ( in_category('css') ) {
+            echo "<i class='fa fa-css3 cat-icon' title='CSS'></i> ";
             }
             ?>
 

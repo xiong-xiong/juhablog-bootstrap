@@ -26,6 +26,9 @@ require_once( __DIR__ . '/functions/menus.php');
 //Including query manipulation functions
 require_once( __DIR__ . '/functions/query.php');
 
+//Including rest functions to disable user endpoint
+require_once( __DIR__ . '/functions/rest.php');
+
 //Including Posts2posts plugins connection type functions
 //require_once( __DIR__ . '/functions/p2p.php');
 

@@ -11,7 +11,10 @@
             <?php get_template_part( 'templates/articlebox'); ?>
 
 
-        <?php endwhile; endif; ?>
+        <?php endwhile;?>
+        <?php else : ?>
+          <p id="comingsoon">Content coming soon!</p>
+        <?php endif; ?>
          <div class="xiong-pagination">
 
   
