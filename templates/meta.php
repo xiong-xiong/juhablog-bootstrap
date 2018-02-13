@@ -1,4 +1,4 @@
-<p><?php if ( in_category('wordpress') ) {
+<p>         <?php if ( in_category('wordpress') ) {
             echo "<i class='fa fa-wordpress cat-icon' title='Wordpress dev'></i> ";
             }
             ?>
@@ -13,23 +13,69 @@
             ?>
 
             <?php if ( in_category('ios') ) {
-            echo "<i class='fa fa-apple cat-icon' title='iOS dev dev'></i> ";
+            echo "<i class='fa fa-apple cat-icon' title='iOS dev'></i> ";
             }
             ?>
-              <?php if ( in_category('basics') ) {
+              <?php if ( in_category('books') ) {
+            echo "<i class='fa fa-book cat-icon' title='Book recommendations'></i> ";
+            }
+            ?>
+
+              <?php if ( in_category('basics')||in_category('basics-js') ) {
             echo "<span class='xiong-basics'>Basics</span>";
             }
             ?>
-            <?php if ( in_category('intermediate') ) {
+            <?php if ( in_category('intermediate') || in_category('intermediate-js')  ) {
             echo "<span class='xiong-intermediate'>Intermediate</span>";
             }
             ?>
-            <?php if ( in_category('advanced') ) {
+            <?php if ( in_category('advanced')|| in_category('advanced-js') ) {
             echo "<span class='xiong-advanced'>Advanced</span>";
             }
             ?>
-            <?php if ( in_category('expert') ) {
+            <?php if ( in_category('expert')|| in_category('expert-js') ) {
             echo "<span class='xiong-expert'>Expert</span>";
             }
             ?>
+
+            <?php $stars = get_post_meta( get_the_ID(), 'stars', true );
+            if ($stars == '1') {
+            echo '<i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+            ';} 
+            elseif($stars == '2') {
+            echo '<i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+            ';}
+            elseif($stars == '3') {
+            echo '<i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+            ';}
+            elseif($stars == '4') {
+            echo '<i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+            ';}
+            elseif($stars == '5') {
+            echo '<i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+            ';}else {
+                  echo '';
+            }
+            ?>
+
             </p>

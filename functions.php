@@ -7,6 +7,9 @@ function my_theme_scripts() {
         wp_enqueue_script( 'xiong-navi', get_template_directory_uri() . '/js/xiong-navi.js', array( 'jquery' ), '1.0.0', true );
         //Typed.js library for typed effect
         wp_enqueue_script( 'typed', get_template_directory_uri() . '/js/typed.js', array(  ), '1.0.0', true );
+
+        //Ajax filters
+        wp_enqueue_script( 'filters', get_template_directory_uri() . '/js/filters.js', array( 'jquery' ), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
 

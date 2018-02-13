@@ -6,10 +6,10 @@ function custom_posts_per_page($query) {
         $query->set('posts_per_page', 6);
     }
 
-    if (is_category()) {
+    if ( $query->is_home() && $query->is_main_query() ) {
         $query->set('posts_per_page', 12);
-    } //endif
-} //function
+    } 
+} 
 
 //this adds the function above to the 'pre_get_posts' action     
 add_action('pre_get_posts', 'custom_posts_per_page');

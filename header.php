@@ -30,6 +30,7 @@
 </script>
 
 
+
   </head>
   
           
@@ -50,7 +51,7 @@
 
       <div class="col-md-6">
         <div id="xiong-site-logo">
-          <a href="<?php echo site_url(); ?>"><h1><i class="fa fa-wordpress"></i> </h1><h1 class="typed"> 
+          <a href="<?php echo site_url(); ?>"><h1><i class="fa fa-angle-right"></i> </h1><h1 class="typed"> 
 
               
           </h1></a>

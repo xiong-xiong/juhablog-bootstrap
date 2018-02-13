@@ -22,7 +22,13 @@
           </script>
 
 
-
+ <?php if (is_archive()) {
+echo '<script type="text/javascript">
+      jQuery( document ).ready(function() {
+    jQuery(".xiong-filters li:nth-child(1) a").text("Kaikki");
+});
+    </script> ';
+}?>
 
   </body>
 </html>

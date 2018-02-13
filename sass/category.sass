@@ -33,3 +33,63 @@
 	text-align: center
 	margin-top: 20vh
 	text-transform: uppercase
+
+
+.xiong-filters
+	padding: 0
+	font-family: $menufont
+	li 
+		display: inline-block
+		padding: 0px 20px
+		background: $brand1
+		color: $white
+		height: 40px
+		line-height: 40px
+		margin-bottom: 5px
+		a
+			color: white
+			height: 40px
+			display: block
+	.current-cat
+		background: $black
+
+.topbooks
+	margin-left: 0
+	padding-right: 0
+	list-style-type: none
+	padding-left: 0
+	text-align: center
+	img
+		width: 50%
+		height: auto
+		display: block
+		margin: 10px auto
+	li 
+		padding: 15px
+		margin: 5px
+		background: $grey
+		counter-increment: xiong-counter
+
+				
+
+.topbooks li::before
+	content: counter(xiong-counter)
+	margin-right: 5px
+	font-size: 30px
+	background-color: $brand1
+	color: white
+	font-weight: bold
+	padding: 3px 12px
+	border-radius: 30px
+
+
+
+ 
+
+
+
+
+
+
+
+

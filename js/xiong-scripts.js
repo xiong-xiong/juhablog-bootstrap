@@ -12,7 +12,7 @@
       })();
     
 
-      
+jQuery('section').css('display', 'none').fadeIn(1200);      
 
 
 
