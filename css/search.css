@@ -10,18 +10,20 @@
     height: 40px;
     padding: 5px 10px 0px 10px;
     margin: 0 !important;
-    font-size: 19px; }
+    font-size: 19px;
+    float: left; }
     .xiong-searchform #searchsubmit:hover {
       opacity: 0.9; }
   .xiong-searchform #s {
     border: 0;
-    width: 70%;
+    width: 50%;
     height: 40px;
     text-align: center;
     margin: 0 !important;
     padding: 0;
     font-size: 25px;
-    font-weight: 300; }
+    font-weight: 300;
+    float: left; }
     .xiong-searchform #s:active, .xiong-searchform #s:focus {
       background: #211717;
       border: 3px solid #00aa00;

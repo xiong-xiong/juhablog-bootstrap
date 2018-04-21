@@ -17,6 +17,21 @@
     background: #fff;
     color: #211717; }
 
+.xiong-bookbox {
+  display: block;
+  text-align: left;
+  background: whitesmoke;
+  color: #211717;
+  padding: 20px;
+  margin: 0px 0px 5px 0px; }
+  .xiong-bookbox h3 {
+    font-size: 25px;
+    font-weight: 400; }
+  .xiong-bookbox .cat-icon {
+    font-size: 30px; }
+  .xiong-bookbox:hover {
+    opacity: 0.9; }
+
 .xiong-basics, .xiong-intermediate, .xiong-advanced, .xiong-expert, .xiong-book-sub-cat {
   display: inline-block;
   background: #211717;

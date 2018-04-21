@@ -43,6 +43,7 @@ p {
       height: 200px; } }
 
 img {
+  width: 100%;
   max-width: 100%; }
 
 #xiong-site-logo {
