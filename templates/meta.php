@@ -18,6 +18,23 @@
             ?>
               <?php if ( in_category('books') ) {
             echo "<i class='fa fa-book cat-icon' title='Book recommendations'></i> ";
+
+            }
+            ?>
+            <?php if ( in_category('fiction') ) {
+            echo "<span class='xiong-book-sub-cat'>Fiction</span>";
+            }
+            ?>
+            <?php if ( in_category('nonfiction') ) {
+            echo "<span class='xiong-book-sub-cat'>Non-Fiction</span>";
+            }
+            ?>
+            <?php if ( in_category('software') ) {
+            echo "<span class='xiong-book-sub-cat'>Software Development</span>";
+            }
+            ?>
+            <?php if ( in_category('business') ) {
+            echo "<span class='xiong-book-sub-cat'>Business</span>";
             }
             ?>
 
@@ -45,7 +62,7 @@
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
-            ';} 
+            ';}
             elseif($stars == '2') {
             echo '<i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -77,5 +94,7 @@
                   echo '';
             }
             ?>
+
+
 
             </p>

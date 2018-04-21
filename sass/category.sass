@@ -22,12 +22,16 @@
 		background: $white
 		color: $black
 
-.xiong-basics, .xiong-intermediate, .xiong-advanced, .xiong-expert
+.xiong-basics, .xiong-intermediate, .xiong-advanced, .xiong-expert, .xiong-book-sub-cat
 	display: inline-block
 	background: $black
-	color: $white 
+	color: $white
 	margin-left: 10px
 	padding: 1px 7px
+
+.xiong-book-sub-cat
+	margin-right: 10px
+
 
 #comingsoon
 	text-align: center
@@ -38,7 +42,7 @@
 .xiong-filters
 	padding: 0
 	font-family: $menufont
-	li 
+	li
 		display: inline-block
 		padding: 0px 20px
 		background: $brand1
@@ -64,13 +68,13 @@
 		height: auto
 		display: block
 		margin: 10px auto
-	li 
+	li
 		padding: 15px
 		margin: 5px
 		background: $grey
 		counter-increment: xiong-counter
 
-				
+
 
 .topbooks li::before
 	content: counter(xiong-counter)
@@ -81,15 +85,3 @@
 	font-weight: bold
 	padding: 3px 12px
 	border-radius: 30px
-
-
-
- 
-
-
-
-
-
-
-
-
